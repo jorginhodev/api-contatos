@@ -65,3 +65,13 @@ exports.deleteUser = async (req, res) => {
     res.status(500).send({ message: "Falha ao remover o usuário." });
   }
 };
+
+// detalhes do contato
+exports.viewUser = async (req, res) => {
+  try {
+    const data = await repository.viewUser(req.params.id);
+    res.status(200).send(data);
+  } catch (e) {
+    res.status(500).send({ message: "Falha ao carregar contato." });
+  }
+};

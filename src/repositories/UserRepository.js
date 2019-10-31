@@ -20,3 +20,11 @@ exports.updateUser = async (id, data) => {
 exports.deleteUser = async id => {
   await User.findOneAndRemove(id);
 };
+
+exports.viewUser = async id => {
+  const res = await User.findById(
+    id,
+    "name email phone company role type subject"
+  );
+  return res;
+};
