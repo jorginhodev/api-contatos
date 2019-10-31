@@ -1,0 +1,22 @@
+{
+  "name": "desafio-pompeia-api",
+  "version": "1.0.0",
+  "description": "API para cadastro, listagem e exclusão de usuários.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node node_modules/nodemon/bin/nodemon bin/server",
+    "start": "node index.js"
+  },
+  "author": "Jorge Ramos",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "mongoose": "^5.7.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
